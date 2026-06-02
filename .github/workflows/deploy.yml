@@ -16,6 +16,7 @@ jobs:
         run: |
           mkdir build
           cp -r page/* build/
+          cp -r image build/
       # 指定上传build目录里的网页文件
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
