@@ -11,11 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # 关键：复制page文件夹全部内容到打包目录
-      - name: Copy page files
-        run: cp -r page/* ./
+      # 新建build文件夹，把page里所有文件复制进去
+      - name: Copy page static files
+        run: |
+          mkdir build
+          cp -r page/* build/
+      # 指定上传build目录里的网页文件
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -23,6 +28,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy
+      - name: Deploy to Github Pages
         id: deployment
         uses: actions/deploy-pages@v4
