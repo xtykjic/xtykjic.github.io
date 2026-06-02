@@ -54,8 +54,8 @@
             <!-- 桌面导航 -->
             <nav class="hidden md:flex items-center space-x-8">
                 <div class="flex items-center space-x-2 ml-4">
-                    <button id="lang-zh" class="px-3 py-1 rounded bg-primary text-white">中文</button>
-                    <button id="lang-en" class="px-3 py-1 rounded bg-gray-200 text-gray-700">English</button>
+                    <button id="lang-zh" class="px-3 py-1 rounded bg-gray-200 text-gray-700">中文</button>
+                    <button id="lang-en" class="px-3 py-1 rounded bg-primary text-white">English</button>
                 </div>
                 <a href="index.html" class="font-medium hover:text-primary transition-colors" data-i18n="navHome">首页</a>
                 <a href="index.html#products" class="font-medium hover:text-primary transition-colors" data-i18n="navProducts">产品</a>
@@ -74,8 +74,8 @@
         <!-- 移动端导航菜单 -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
                 <div class="flex justify-center space-x-2 py-2 border-b">
-                    <button id="mobile-lang-zh" class="px-3 py-1 rounded bg-primary text-white">中文</button>
-                    <button id="mobile-lang-en" class="px-3 py-1 rounded bg-gray-200 text-gray-700">English</button>
+                    <button id="mobile-lang-zh" class="px-3 py-1 rounded bg-gray-200 text-gray-700">中文</button>
+                    <button id="mobile-lang-en" class="px-3 py-1 rounded bg-primary text-white">English</button>
                 </div>
             <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
                 <a href="index.html" class="font-medium py-2 hover:text-primary transition-colors" data-i18n="navHome">首页</a>
@@ -462,7 +462,7 @@
 
         // 初始化语言
         function initLanguage() {
-            const savedLang = localStorage.getItem('preferredLang') || 'zh';
+            const savedLang = localStorage.getItem('preferredLang') || 'en';
             setLanguage(savedLang);
         }
 
