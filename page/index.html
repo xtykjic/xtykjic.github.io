@@ -1,0 +1,1245 @@
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
+    <title>深圳市新拓源科技有限公司</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <script>
+        // 语言翻译数据
+        const translations = {
+            zh: {
+                navHome: '首页',
+                navProducts: '产品',
+                navServices: '服务',
+                navAbout: '关于我们',
+                navContact: '联系我们',
+                navInquiry: '询价',
+                heroTitle: '专业电子元器件<br><span class="text-primary">解决方案提供商</span>',
+                heroDesc: '我们专注于为全球客户提供高品质的电子元器件产品和专业的技术支持，助力您的创新产品快速上市。',
+                heroBrowse: '浏览产品',
+                heroContact: '联系我们',
+                heroPartners: '合作品牌',
+                heroResponse: '快速响应',
+                heroSatisfaction: '客户满意度',
+                companyName: '深圳市新拓源科技有限公司',
+                trustedTitle: '与全球行业领先的品牌合作',
+                productsTitle: '我们的产品',
+                productsDesc: '提供全方位的电子元器件解决方案，满足您的各种应用需求',
+                product1: '集成电路',
+                product1Desc: '高性能、低功耗的集成电路解决方案，广泛应用于通信、工业控制和消费电子领域。',
+                product1Hot: '热销',
+                product2: '无源元件',
+                product2Desc: '高品质电阻、电容和电感，满足各种精密电路设计需求，提供稳定可靠的性能。',
+                product2New: '新品',
+                product3: '传感器',
+                product3Desc: '高精度传感器解决方案，包括温度、压力、光线和运动传感器，应用于智能设备和物联网领域。',
+                product3Best: '畅销',
+                product4: '连接器',
+                product4Desc: '各种规格的高品质连接器，提供可靠的电气连接，广泛应用于工业和消费电子设备。',
+                product5: '电源管理',
+                product5Desc: '高效节能的电源管理解决方案，包括稳压器、电池管理和LED驱动器，满足各种功耗需求。',
+                product6: '半导体分立器件',
+                product6Desc: '高品质二极管、三极管和MOSFET，提供可靠的开关和放大功能，适用于各种电子电路。',
+                productViewAll: '查看全部产品',
+                servicesTitle: '我们的服务',
+                servicesDesc: '提供全方位的电子元器件解决方案，满足您的各种应用需求',
+                service1: '定制解决方案',
+                service1Desc: '根据您的具体需求，提供定制化的电子元器件解决方案，确保最佳性能和成本效益。',
+                service2: '全球物流配送',
+                service2Desc: '提供高效可靠的全球物流服务，确保您的订单及时送达，无论您位于世界何处。',
+                service3: '技术支持',
+                service3Desc: '由专业工程师组成的技术支持团队，为您提供产品应用和技术问题的解决方案。',
+                service4: '质量保证',
+                service4Desc: '严格的质量控制体系，确保每一件产品都符合国际标准和客户的严格要求。',
+                service5: '快速响应',
+                service5Desc: '24/7客户服务团队，确保您的咨询和问题得到及时响应和解决。',
+                service6: '市场分析',
+                service6Desc: '提供最新的电子元器件市场趋势和价格分析，帮助您做出明智的采购决策。',
+                aboutTitle: '关于我们',
+                aboutDesc1: '深圳市新拓源科技有限公司成立于2024年，总部位于中国深圳，是一家专注于电子元器件销售和解决方案的高科技企业。作为全球电子产业链的重要一环，我们致力于为客户提供高品质、高性能的电子元器件产品和专业的技术支持。',
+                aboutDesc2: '凭借深圳作为全球电子产业中心的地理位置优势，我们与全球领先的电子元器件制造商建立了长期稳定的合作关系，确保为客户提供最优质的产品和最具竞争力的价格。我们的团队由经验丰富的行业专家组成，能够为客户提供全方位的技术支持和解决方案。',
+                aboutExp: '行业经验',
+                aboutClients: '满意客户',
+                aboutPartners: '合作伙伴',
+                aboutProjects: '成功项目',
+                aboutLearn: '了解更多',
+                statsExp: '年行业经验',
+                statsClients: '全球客户',
+                statsProducts: '产品型号',
+                statsSatisfaction: '客户满意度',
+                statsPartners: '合作品牌',
+                statsEngineers: '专业工程师',
+                locationLabel: '位于',
+                locationValue: '中国深圳',
+                testimonialsTitle: '客户评价',
+                testimonialsDesc: '听听我们的客户怎么说',
+                contactTitle: '联系我们',
+                contactDesc: '无论您有任何问题或需求，我们的团队都随时准备为您提供帮助。',
+                contactAddress: '公司地址',
+                contactPhone: '联系电话',
+                contactEmail: '电子邮箱',
+                contactHours: '工作时间',
+                contactHoursDesc: '周一至周五: 9:00 - 18:00',
+                formName: '姓名',
+                formEmail: '电子邮箱',
+                formSubject: '主题',
+                formMessage: '消息',
+                formSubmit: '发送消息',
+                mapText: '地图将显示在这里',
+                subscribeTitle: '订阅我们的通讯',
+                subscribeDesc: '获取最新的产品信息、行业动态和独家优惠',
+                subscribePlaceholder: '您的电子邮箱',
+                subscribeButton: '订阅',
+                footerQuick: '快速链接',
+                footerDesc: '专业电子元器件解决方案提供商，致力于为全球客户提供高品质的产品和服务。',
+                footerRights: '© 2024 深圳市新拓源科技有限公司. 保留所有权利。',
+                footerPrivacy: '隐私政策',
+                footerTerms: '使用条款',
+                footerCookie: 'Cookie政策',
+                applicationsTitle: '特色应用',
+                applicationsDesc: '我们的电子元器件广泛应用于多个行业领域，为客户提供可靠的解决方案',
+                app1: '消费电子',
+                app1Desc: '智能手机、平板电脑、可穿戴设备等消费电子产品的核心元器件解决方案',
+                app2: '工业控制',
+                app2Desc: '工业自动化设备、机器人技术和智能制造系统的关键元器件支持',
+                app3: '汽车电子',
+                app3Desc: '车载信息娱乐系统、自动驾驶和新能源汽车的高性能电子元器件',
+                app4: '医疗设备',
+                app4Desc: '高精度医疗电子设备的关键元器件，确保可靠性和准确性',
+                app5: '能源管理',
+                app5Desc: '可再生能源系统和智能电网的能源管理解决方案',
+                app6: '通信设备',
+                app6Desc: '下一代通信网络设备的高性能电子元器件',
+                footerHome: '首页',
+                footerCopyright: '© 2024 深圳市新拓源科技有限公司. 保留所有权利。'
+            },
+            en: {
+                navHome: 'Home',
+                navProducts: 'Products',
+                navServices: 'Services',
+                navAbout: 'About Us',
+                navContact: 'Contact',
+                navInquiry: 'Inquiry',
+                heroTitle: 'Professional Electronic Components<br><span class="text-primary">Solution Provider</span>',
+                heroDesc: 'We specialize in providing high-quality electronic components and professional technical support to global customers, helping your innovative products reach the market quickly.',
+                heroBrowse: 'Browse Products',
+                heroContact: 'Contact Us',
+                heroPartners: 'Partners',
+                heroResponse: 'Quick Response',
+                heroSatisfaction: 'Satisfaction Rate',
+                companyName: 'Shenzhen Xintuo Yuan Technology Co., Ltd.',
+                trustedTitle: 'Collaborate with globally leading brands',
+                productsTitle: 'Our Products',
+                productsDesc: 'Comprehensive electronic component solutions to meet your various application needs',
+                product1: 'Integrated Circuits',
+                product1Desc: 'High-performance, low-power integrated circuit solutions widely used in communications, industrial control, and consumer electronics.',
+                product1Hot: 'Hot',
+                product2: 'Passive Components',
+                product2Desc: 'High-quality resistors, capacitors, and inductors for precision circuit designs requiring stable and reliable performance.',
+                product2New: 'New',
+                product3: 'Sensors',
+                product3Desc: 'High-precision sensor solutions including temperature, pressure, light, and motion sensors for smart devices and IoT applications.',
+                product3Best: 'Bestseller',
+                product4: 'Connectors',
+                product4Desc: 'High-quality connectors in various specifications providing reliable electrical connections for industrial and consumer electronic devices.',
+                product5: 'Power Management',
+                product5Desc: 'Energy-efficient power management solutions including regulators, battery management, and LED drivers for various power requirements.',
+                product6: 'Semiconductor Discrete Devices',
+                product6Desc: 'High-quality diodes, transistors, and MOSFETs providing reliable switching and amplification for various electronic circuits.',
+                productViewAll: 'View All Products',
+                servicesTitle: 'Our Services',
+                servicesDesc: 'Comprehensive electronic component solutions to meet your various application needs',
+                service1: 'Custom Solutions',
+                service1Desc: 'Tailored electronic component solutions based on your specific requirements, ensuring optimal performance and cost-effectiveness.',
+                service2: 'Global Logistics',
+                service2Desc: 'Efficient and reliable global logistics services ensuring your orders arrive on time, wherever you are in the world.',
+                service3: 'Technical Support',
+                service3Desc: 'Professional engineering team providing product application and technical problem solutions.',
+                service4: 'Quality Assurance',
+                service4Desc: 'Strict quality control system ensuring every product meets international standards and customer requirements.',
+                service5: 'Quick Response',
+                service5Desc: '24/7 customer service team ensuring your inquiries and issues receive prompt attention and resolution.',
+                service6: 'Market Analysis',
+                service6Desc: 'Latest electronic component market trends and price analysis to help you make informed purchasing decisions.',
+                aboutTitle: 'About Us',
+                aboutDesc1: 'Shenzhen Xintuo Yuan Technology Co., Ltd., established in 2024 and headquartered in Shenzhen, China, is a high-tech enterprise specializing in electronic component sales and solutions. As an important part of the global electronic industry chain, we are committed to providing customers with high-quality, high-performance electronic components and professional technical support.',
+                aboutDesc2: 'Leveraging Shenzhen\'s geographical advantage as a global electronics industry hub, we have established long-term stable cooperative relationships with leading global electronic component manufacturers, ensuring we provide customers with the highest quality products at the most competitive prices. Our team consists of experienced industry experts capable of providing comprehensive technical support and solutions.',
+                aboutExp: 'Years Experience',
+                aboutClients: 'Satisfied Clients',
+                aboutPartners: 'Partners',
+                aboutProjects: 'Successful Projects',
+                aboutLearn: 'Learn More',
+                statsExp: 'Years Experience',
+                statsClients: 'Global Clients',
+                statsProducts: 'Product Models',
+                statsSatisfaction: 'Satisfaction Rate',
+                statsPartners: 'Partners',
+                statsEngineers: 'Professional Engineers',
+                locationLabel: 'Located in',
+                locationValue: 'Shenzhen, China',
+                applicationsTitle: 'Featured Applications',
+                applicationsDesc: 'Our electronic components are widely used in various industries, providing reliable solutions for customers',
+                app1: 'Consumer Electronics',
+                app1Desc: 'Core component solutions for smartphones, tablets, wearable devices and other consumer electronics products',
+                app2: 'Industrial Control',
+                app2Desc: 'Key component support for industrial automation equipment, robotics and intelligent manufacturing systems',
+                app3: 'Automotive Electronics',
+                app3Desc: 'Advanced electronic components for automotive systems including powertrain, infotainment and safety applications',
+                app4: 'Medical Devices',
+                app4Desc: 'Key components for high-precision medical electronic equipment ensuring reliability and accuracy',
+                app5: 'Energy Management',
+                app5Desc: 'Energy management solutions for renewable energy systems and smart grids',
+                app6: 'Communication Equipment',
+                app6Desc: 'High-performance electronic components for next-generation communication network equipment',
+                testimonialsTitle: 'Customer Testimonials',
+                testimonialsDesc: 'What our customers say',
+                contactTitle: 'Contact Us',
+                contactDesc: 'Our team is ready to assist you with any questions or needs. Please fill out the form below and we will contact you as soon as possible.',
+                contactAddress: 'Company Address',
+                contactPhone: 'Phone Number',
+                contactEmail: 'Email Address',
+                contactHours: 'Working Hours',
+                contactHoursDesc: 'Monday to Friday: 9:00 - 18:00',
+                formName: 'Name',
+                formEmail: 'Email',
+                formSubject: 'Subject',
+                formMessage: 'Message',
+                formSubmit: 'Send Message',
+                mapText: 'Map will be displayed here',
+                subscribeTitle: 'Subscribe to Our Newsletter',
+                subscribeDesc: 'Get the latest product information, industry news, and exclusive offers',
+                subscribePlaceholder: 'Your email address',
+                subscribeButton: 'Subscribe',
+                footerQuick: 'Quick Links',
+                footerDesc: 'Professional electronic components solution provider, committed to providing high-quality products and services to global customers.',
+                footerRights: '© 2024 Shenzhen Xintuo Yuan Technology Co., Ltd. All rights reserved.',
+                footerPrivacy: 'Privacy Policy',
+                footerTerms: 'Terms of Service',
+                footerCookie: 'Cookie Policy',
+                footerHome: 'Home',
+                footerCopyright: '© 2024 Shenzhen Xintuo Yuan Technology Co., Ltd. All rights reserved.'
+            }
+        };
+
+        // 初始化语言
+        function initLanguage() {
+            const savedLang = localStorage.getItem('preferredLang') || 'zh';
+            setLanguage(savedLang);
+        }
+
+        // 设置语言
+        function setLanguage(lang) {
+            // 更新HTML lang属性
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+            document.title = lang === 'zh' ? '深圳市新拓源科技有限公司' : 'Shenzhen Xintuo Yuan Technology Co., Ltd.';
+
+            // 更新导航链接
+            const navElements = [
+                { selector: '[data-i18n=navHome]', key: 'navHome' },
+                { selector: '[data-i18n=navProducts]', key: 'navProducts' },
+                { selector: '[data-i18n=navServices]', key: 'navServices' },
+                { selector: '[data-i18n=navAbout]', key: 'navAbout' },
+                { selector: '[data-i18n=navContact]', key: 'navContact' },
+                { selector: '[data-i18n=navInquiry]', key: 'navInquiry' }
+            ];
+            navElements.forEach(({ selector, key }) => {
+                document.querySelectorAll(selector).forEach(el => {
+                    el.textContent = translations[lang][key];
+                });
+            });
+
+            // 更新英雄区域
+            const heroElements = [
+                { selector: '[data-i18n=heroTitle]', key: 'heroTitle', property: 'innerHTML' },
+                { selector: '[data-i18n=heroDesc]', key: 'heroDesc', property: 'textContent' },
+                { selector: '[data-i18n=heroBrowse]', key: 'heroBrowse', property: 'textContent' },
+                { selector: '[data-i18n=heroContact]', key: 'heroContact', property: 'textContent' },
+                { selector: '[data-i18n=heroPartners]', key: 'heroPartners', property: 'textContent' },
+                { selector: '[data-i18n=heroResponse]', key: 'heroResponse', property: 'textContent' },
+                { selector: '[data-i18n=heroSatisfaction]', key: 'heroSatisfaction', property: 'textContent' }
+            ];
+            heroElements.forEach(({ selector, key, property = 'textContent' }) => {
+                const element = document.querySelector(selector);
+                if (element) element[property] = translations[lang][key];
+            });
+
+            // 更新信任标志区域
+            const trustedElement = document.querySelector('[data-i18n=trustedTitle]');
+            if (trustedElement) trustedElement.textContent = translations[lang].trustedTitle;
+
+            // 更新产品区域
+            const productElements = [
+                { selector: '[data-i18n=productsTitle]', key: 'productsTitle' },
+                { selector: '[data-i18n=productsDesc]', key: 'productsDesc' },
+                { selector: '[data-i18n=product1]', key: 'product1' },
+                { selector: '[data-i18n=product1Desc]', key: 'product1Desc' },
+                { selector: '[data-i18n=product1Hot]', key: 'product1Hot' },
+                { selector: '[data-i18n=product2]', key: 'product2' },
+                { selector: '[data-i18n=product2Desc]', key: 'product2Desc' },
+                { selector: '[data-i18n=product2New]', key: 'product2New' },
+                { selector: '[data-i18n=product3]', key: 'product3' },
+                { selector: '[data-i18n=product3Desc]', key: 'product3Desc' },
+                { selector: '[data-i18n=product3Best]', key: 'product3Best' },
+                { selector: '[data-i18n=product4]', key: 'product4' },
+                { selector: '[data-i18n=product4Desc]', key: 'product4Desc' },
+                { selector: '[data-i18n=product5]', key: 'product5' },
+                { selector: '[data-i18n=product5Desc]', key: 'product5Desc' },
+                { selector: '[data-i18n=product6]', key: 'product6' },
+                { selector: '[data-i18n=product6Desc]', key: 'product6Desc' },
+                { selector: '[data-i18n=productViewAll]', key: 'productViewAll' }
+            ];
+            productElements.forEach(({ selector, key }) => {
+                const element = document.querySelector(selector);
+                if (element) element.textContent = translations[lang][key];
+            });
+
+            // 更新服务区域
+            const serviceElements = [
+                { selector: '[data-i18n=servicesTitle]', key: 'servicesTitle' },
+                { selector: '[data-i18n=servicesDesc]', key: 'servicesDesc' },
+                { selector: '[data-i18n=service1]', key: 'service1', multiple: true },
+                { selector: '[data-i18n=service1Desc]', key: 'service1Desc', multiple: true },
+                { selector: '[data-i18n=service2]', key: 'service2', multiple: true },
+                { selector: '[data-i18n=service2Desc]', key: 'service2Desc', multiple: true },
+                { selector: '[data-i18n=service3]', key: 'service3', multiple: true },
+                { selector: '[data-i18n=service3Desc]', key: 'service3Desc', multiple: true },
+                { selector: '[data-i18n=service4]', key: 'service4', multiple: true },
+                { selector: '[data-i18n=service4Desc]', key: 'service4Desc', multiple: true },
+                { selector: '[data-i18n=service5]', key: 'service5', multiple: true },
+                { selector: '[data-i18n=service5Desc]', key: 'service5Desc', multiple: true },
+                { selector: '[data-i18n=service6]', key: 'service6', multiple: true },
+                { selector: '[data-i18n=service6Desc]', key: 'service6Desc', multiple: true }
+            ];
+            serviceElements.forEach(({ selector, key, multiple = false }) => {
+                const elements = multiple ? document.querySelectorAll(selector) : [document.querySelector(selector)];
+                elements.forEach(el => {
+                    if (el) el.textContent = translations[lang][key];
+                });
+            });
+
+            // 更新特色应用区域
+            const applicationsElements = [
+                { selector: '[data-i18n=applicationsTitle]', key: 'applicationsTitle' },
+                { selector: '[data-i18n=applicationsDesc]', key: 'applicationsDesc' },
+                { selector: '[data-i18n=app1]', key: 'app1' },
+                { selector: '[data-i18n=app1Desc]', key: 'app1Desc' },
+                { selector: '[data-i18n=app2]', key: 'app2' },
+                { selector: '[data-i18n=app2Desc]', key: 'app2Desc' },
+                { selector: '[data-i18n=app3]', key: 'app3' },
+                { selector: '[data-i18n=app3Desc]', key: 'app3Desc' },
+                { selector: '[data-i18n=app4]', key: 'app4' },
+                { selector: '[data-i18n=app4Desc]', key: 'app4Desc' }
+            ];
+            applicationsElements.forEach(({ selector, key }) => {
+                const element = document.querySelector(selector);
+                if (element) element.textContent = translations[lang][key];
+            });
+
+            // 更新关于我们区域
+            const aboutElements = [
+                { selector: '[data-i18n=aboutTitle]', key: 'aboutTitle' },
+                { selector: '[data-i18n=aboutDesc1]', key: 'aboutDesc1' },
+                { selector: '[data-i18n=aboutDesc2]', key: 'aboutDesc2' },
+                { selector: '[data-i18n=aboutExp]', key: 'aboutExp' },
+                { selector: '[data-i18n=aboutClients]', key: 'aboutClients' },
+                { selector: '[data-i18n=aboutPartners]', key: 'aboutPartners' },
+                { selector: '[data-i18n=aboutProjects]', key: 'aboutProjects' },
+                { selector: '[data-i18n=aboutLearn]', key: 'aboutLearn' },
+                { selector: '[data-i18n=statsSatisfaction]', key: 'statsSatisfaction' },
+                { selector: '[data-i18n=statsPartners]', key: 'statsPartners' },
+                { selector: '[data-i18n=statsEngineers]', key: 'statsEngineers' },
+                { selector: '[data-i18n=locationLabel]', key: 'locationLabel' },
+                { selector: '[data-i18n=locationValue]', key: 'locationValue' }
+            ];
+            aboutElements.forEach(({ selector, key }) => {
+                const element = document.querySelector(selector);
+                if (element) element.textContent = translations[lang][key];
+            });
+
+            // 更新数据统计区域
+            const statsElements = [
+                { selector: '[data-i18n=statsExp]', key: 'statsExp' },
+                { selector: '[data-i18n=statsClients]', key: 'statsClients' },
+                { selector: '[data-i18n=statsProducts]', key: 'statsProducts' },
+                { selector: '[data-i18n=statsSatisfaction]', key: 'statsSatisfaction' }
+            ];
+            statsElements.forEach(({ selector, key }) => {
+                const element = document.querySelector(selector);
+                if (element) element.textContent = translations[lang][key];
+            })
+
+            // 更新客户评价区域
+            const testimonialElements = [
+                { selector: '[data-i18n=testimonialsTitle]', key: 'testimonialsTitle' },
+                { selector: '[data-i18n=testimonialsDesc]', key: 'testimonialsDesc' }
+            ];
+            testimonialElements.forEach(({ selector, key }) => {
+                const element = document.querySelector(selector);
+                if (element) element.textContent = translations[lang][key];
+            });
+
+            // 更新联系我们区域
+            const contactElements = [
+                { selector: '[data-i18n=contactTitle]', key: 'contactTitle' },
+                { selector: '[data-i18n=contactDesc]', key: 'contactDesc' },
+                { selector: '[data-i18n=contactAddress]', key: 'contactAddress' },
+                { selector: '[data-i18n=contactPhone]', key: 'contactPhone' },
+                { selector: '[data-i18n=contactEmail]', key: 'contactEmail' },
+                { selector: '[data-i18n=contactHours]', key: 'contactHours' },
+                { selector: '[data-i18n=contactHoursDesc]', key: 'contactHoursDesc' }
+            ];
+            contactElements.forEach(({ selector, key }) => {
+                const element = document.querySelector(selector);
+                if (element) element.textContent = translations[lang][key];
+            });
+
+            // 更新表单
+            const formElements = [
+                { selector: '[data-i18n=formName]', key: 'formName' },
+                { selector: '[data-i18n=formEmail]', key: 'formEmail' },
+                { selector: '[data-i18n=formSubject]', key: 'formSubject' },
+                { selector: '[data-i18n=formMessage]', key: 'formMessage' },
+                { selector: '[data-i18n=formSubmit]', key: 'formSubmit' }
+            ];
+            formElements.forEach(({ selector, key }) => {
+                const element = document.querySelector(selector);
+                if (element) element.textContent = translations[lang][key];
+            });
+
+            // 更新地图区域
+            const mapElement = document.querySelector('[data-i18n=mapText]');
+            if (mapElement) mapElement.textContent = translations[lang].mapText;
+
+            // 更新订阅区域
+            const subscribeElements = [
+                { selector: '[data-i18n=subscribeTitle]', key: 'subscribeTitle', property: 'textContent' },
+                { selector: '[data-i18n=subscribeDesc]', key: 'subscribeDesc', property: 'textContent' },
+                { selector: '[data-i18n=subscribePlaceholder]', key: 'subscribePlaceholder', property: 'placeholder' },
+                { selector: '[data-i18n=subscribeButton]', key: 'subscribeButton', property: 'textContent' }
+            ];
+            subscribeElements.forEach(({ selector, key, property = 'textContent' }) => {
+                const element = document.querySelector(selector);
+                if (element) element[property] = translations[lang][key];
+            });
+
+            // 更新页脚
+            const footerElements = [
+                { selector: '[data-i18n=footerQuick]', key: 'footerQuick' },
+                { selector: '[data-i18n=footerDesc]', key: 'footerDesc' },
+                { selector: '[data-i18n=footerHome]', key: 'footerHome' },
+                { selector: '[data-i18n=footerCopyright]', key: 'footerCopyright' },
+                { selector: '[data-i18n=footerPrivacy]', key: 'footerPrivacy' },
+                { selector: '[data-i18n=footerTerms]', key: 'footerTerms' },
+                { selector: '[data-i18n=footerCookie]', key: 'footerCookie' }
+            ];
+            footerElements.forEach(({ selector, key }) => {
+                document.querySelectorAll(selector).forEach(el => {
+                    el.textContent = translations[lang][key];
+                });
+            });
+
+            // 更新公司名称
+            document.querySelectorAll('[data-i18n=companyName]').forEach(el => {
+                el.textContent = translations[lang].companyName;
+            });
+
+            // 更新语言按钮样式
+            document.getElementById('lang-zh').className = lang === 'zh' ? 'px-3 py-1 rounded bg-primary text-white' : 'px-3 py-1 rounded bg-gray-200 text-gray-700';
+            document.getElementById('lang-en').className = lang === 'en' ? 'px-3 py-1 rounded bg-primary text-white' : 'px-3 py-1 rounded bg-gray-200 text-gray-700';
+            document.getElementById('mobile-lang-zh').className = lang === 'zh' ? 'px-3 py-1 rounded bg-primary text-white' : 'px-3 py-1 rounded bg-gray-200 text-gray-700';
+            document.getElementById('mobile-lang-en').className = lang === 'en' ? 'px-3 py-1 rounded bg-primary text-white' : 'px-3 py-1 rounded bg-gray-200 text-gray-700';
+
+            // 保存语言偏好
+            localStorage.setItem('preferredLang', lang);
+        }
+
+        // 安全初始化语言并添加事件监听器
+        function safeInitLanguage() {
+            try {
+                initLanguage();
+            } catch (e) {
+                console.error('初始化语言失败:', e);
+            }
+        }
+
+        // 安全添加语言切换事件监听器
+        function addLanguageEventListeners() {
+            const languageButtons = [
+                { id: 'lang-zh', lang: 'zh' },
+                { id: 'lang-en', lang: 'en' },
+                { id: 'mobile-lang-zh', lang: 'zh' },
+                { id: 'mobile-lang-en', lang: 'en' }
+            ];
+
+            languageButtons.forEach(({ id, lang }) => {
+                const button = document.getElementById(id);
+                if (button) {
+                    console.log(`语言按钮${id}找到，添加点击事件监听器`);
+                    button.addEventListener('click', () => {
+                        console.log(`语言按钮${id}被点击，尝试切换到${lang}语言`);
+                        try {
+                            console.log(`开始执行setLanguage(${lang})`);
+                            setLanguage(lang);
+                            console.log(`setLanguage(${lang})执行完成`);
+                        } catch (e) {
+                            console.error(`切换到${lang}语言失败:`, e);
+                        }
+                    });
+                } else {
+                    console.warn(`语言切换按钮#${id}未找到`);
+                }
+            });
+        }
+
+        // 页面加载时初始化
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                safeInitLanguage();
+                addLanguageEventListeners();
+            });
+        } else {
+            safeInitLanguage();
+            addLanguageEventListeners();
+        }
+        
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC9',
+                        accent: '#FF7D00',
+                        dark: '#1D2129',
+                        light: '#F2F3F5',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .text-shadow-lg {
+                text-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+            }
+            .bg-blur {
+                backdrop-filter: blur(8px);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+            }
+        }
+    </style>
+</head>
+
+<body class="font-inter bg-light text-dark">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="../image/brand.svg" alt="公司logo" class="w-10 h-10 rounded-lg">
+                <span class="text-xl font-bold text-primary" data-i18n="companyName">深圳市新拓源科技有限公司</span>
+            </a>
+            
+            <!-- 桌面导航 -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <div class="flex items-center space-x-2 ml-4">
+                    <button id="lang-zh" class="px-3 py-1 rounded bg-primary text-white">中文</button>
+                    <button id="lang-en" class="px-3 py-1 rounded bg-gray-200 text-gray-700">English</button>
+                </div>
+                <a href="index.html" class="font-medium hover:text-primary transition-colors" data-i18n="navHome">首页</a>
+                <a href="products.html" class="font-medium hover:text-primary transition-colors" data-i18n="navProducts">产品</a>
+                <a href="#services" class="font-medium hover:text-primary transition-colors" data-i18n="navServices">服务</a>
+                <a href="#about" class="font-medium hover:text-primary transition-colors" data-i18n="navAbout">关于我们</a>
+               <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-lg hover:bg-primary/90 transition-colors" data-i18n="navInquiry">询价</a></nav>
+            
+            <!-- 移动端菜单按钮 -->
+            <button id="menu-toggle" class="md:hidden text-dark focus:outline-none">
+                <i class="fa fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+                <div class="flex justify-center space-x-2 py-2 border-b">
+                    <button id="mobile-lang-zh" class="px-3 py-1 rounded bg-primary text-white">中文</button>
+                    <button id="mobile-lang-en" class="px-3 py-1 rounded bg-gray-200 text-gray-700">English</button>
+                </div>
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="index.html" class="font-medium py-2 hover:text-primary transition-colors" data-i18n="navHome">首页</a>
+                <a href="products.html" class="font-medium py-2 hover:text-primary transition-colors" data-i18n="navProducts">产品</a>
+                <a href="#services" class="font-medium py-2 hover:text-primary transition-colors" data-i18n="navServices">服务</a>
+                <a href="#about" class="font-medium py-2 hover:text-primary transition-colors" data-i18n="navAbout">关于我们</a>
+                <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-lg hover:bg-primary/90 transition-colors text-center" data-i18n="navInquiry">询价</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区 -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold leading-tight text-dark mb-4" data-i18n="heroTitle">
+                        专业电子元器件<br><span class="text-primary">解决方案提供商</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg" data-i18n="heroDesc">
+                        我们专注于为全球客户提供高品质的电子元器件产品和专业的技术支持，助力您的创新产品快速上市。
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="products.html" class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl" data-i18n="heroBrowse">
+                            浏览产品
+                        </a>
+                        <a href="#contact" class="bg-white hover:bg-gray-50 text-primary border border-primary px-8 py-3 rounded-lg font-medium transition-all shadow-md hover:shadow-lg" data-i18n="heroContact">
+                            联系我们
+                        </a>
+                    </div>
+                    <div class="mt-12 flex flex-wrap items-center gap-6">
+                        <div class="flex items-center space-x-2">
+                            <div class="flex -space-x-2">
+                                <img src="https://picsum.photos/id/1/40/40" alt="合作品牌" class="w-10 h-10 rounded-full border-2 border-white">
+                                <img src="https://picsum.photos/id/2/40/40" alt="合作品牌" class="w-10 h-10 rounded-full border-2 border-white">
+                                <img src="https://picsum.photos/id/3/40/40" alt="合作品牌" class="w-10 h-10 rounded-full border-2 border-white">
+                                <div class="w-10 h-10 rounded-full border-2 border-white bg-primary/10 flex items-center justify-center text-xs font-medium text-primary">
+                                    100+
+                                </div>
+                            </div>
+                            <span class="text-sm text-gray-600" data-i18n="heroPartners">合作品牌</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa fa-clock text-primary"></i>
+                            <span class="text-sm text-gray-600"><span class="font-semibold text-primary">24/7</span> <span data-i18n="heroResponse">快速响应</span></span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa fa-star text-accent"></i>
+                            <span class="text-sm text-gray-600"><span class="font-semibold text-accent">99.8%</span> <span data-i18n="heroSatisfaction">客户满意度</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="../image/banner/homepage.jpg" alt="电子元器件产品展示" class="w-full h-auto">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 w-40 h-40 bg-secondary/20 rounded-full blur-3xl"></div>
+                    <div class="absolute -top-6 -right-6 w-40 h-40 bg-primary/20 rounded-full blur-3xl"></div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 信任标志 -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-gray-500 mb-8 text-2xl" data-i18n="trustedTitle">与全球行业领先的品牌合作</p>
+            <div class="overflow-x-auto pb-4">
+                <div class="flex space-x-8 min-w-max">
+                    <img src="../image/brand/NXP.jpg" alt="NXP" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/ON.jpg" alt="ON Semiconductor" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/ST.jpg" alt="STMicroelectronics" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/TI.jpg" alt="Texas Instruments" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/amphenol.jpg" alt="Amphenol" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/broadcom.jpg" alt="Broadcom" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/freescale.jpg" alt="Freescale" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/infineon.jpg" alt="Infineon" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/intel.jpg" alt="Intel" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/sangxing.jpg" alt="Sangxing" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/semtech.jpg" alt="Semtech" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/toshiba.jpg" alt="Toshiba" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/vishay.jpg" alt="Vishay" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                    <img src="../image/brand/xilinx.jpg" alt="Xilinx" class="h-16 w-auto hover:grayscale-0 hover:opacity-100 transition-all">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品展示 -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-4" data-i18n="productsTitle">我们的产品</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-i18n="productsDesc">
+                    提供全方位的电子元器件解决方案，满足您的各种应用需求
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 产品卡片1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../image/sample/芯片.jpg" alt="集成电路" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold" data-i18n="product1">集成电路</h3>
+                            <span class="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full" data-i18n="product1Hot">热销</span>
+                        </div>
+                        <p class="text-gray-600 mb-4" data-i18n="product1Desc">高性能、低功耗的集成电路解决方案，广泛应用于通信、工业控制和消费电子领域。</p>
+                        </div>
+                </div>
+                
+                <!-- 产品卡片2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../image/sample/电容.jpg" alt="无源元件" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold" data-i18n="product2">无源元件</h3>
+                            <span class="bg-secondary/10 text-secondary text-sm px-3 py-1 rounded-full" data-i18n="product2New">新品</span>
+                        </div>
+                        <p class="text-gray-600 mb-4" data-i18n="product2Desc">高品质电阻、电容和电感，满足各种精密电路设计需求，提供稳定可靠的性能。</p>
+                    </div>
+                </div>
+                
+                <!-- 产品卡片3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../image/sample/电阻.jpg" alt="传感器" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold" data-i18n="product3">传感器</h3>
+                            <span class="bg-accent/10 text-accent text-sm px-3 py-1 rounded-full" data-i18n="product3Best">畅销</span>
+                        </div>
+                        <p class="text-gray-600 mb-4" data-i18n="product3Desc">高精度传感器解决方案，包括温度、压力、光线和运动传感器，应用于智能设备和物联网领域。</p>
+                    </div>
+                </div>
+                
+                <!-- 产品卡片4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../image/sample/电子元器件.jpg" alt="连接器" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold" data-i18n="product4">连接器</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4" data-i18n="product4Desc">各种规格的高品质连接器，提供可靠的电气连接，广泛应用于工业和消费电子设备。</p>
+                    </div>
+                </div>
+                
+                <!-- 产品卡片5 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../image/sample/电路板.jpg" alt="电源管理" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold" data-i18n="product5">电源管理</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4" data-i18n="product5Desc">高效节能的电源管理解决方案，包括稳压器、电池管理和LED驱动器，满足各种功耗需求。</p>
+                    </div>
+                </div>
+                
+                <!-- 产品卡片6 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../image/sample/PCB.jpg" alt="半导体分立器件" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold" data-i18n="product6">半导体分立器件</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4" data-i18n="product6Desc">高品质二极管、三极管和MOSFET，提供可靠的开关和放大功能，适用于各种电子电路。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="products.html" class="inline-flex items-center justify-center bg-white border border-primary text-primary hover:bg-primary/5 px-8 py-3 rounded-lg font-medium transition-all shadow-md hover:shadow-lg" data-i18n="productViewAll">
+                    查看全部产品 <i class="fa fa-long-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务介绍 -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-4" data-i18n="servicesTitle">我们的服务</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-i18n="servicesDesc">
+                    提供全方位的电子元器件解决方案，满足您的各种应用需求
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 服务卡片1 -->
+                <div class="bg-light rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                        <i class="fa fa-cogs text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3" data-i18n="service1">定制解决方案</h3>
+                    <p class="text-gray-600" data-i18n="service1Desc">
+                        根据您的具体需求，提供定制化的电子元器件解决方案，确保最佳性能和成本效益。
+                    </p>
+                </div>
+                
+                <!-- 服务卡片2 -->
+                <div class="bg-light rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 rounded-lg bg-secondary/10 flex items-center justify-center mb-6">
+                        <i class="fa fa-truck text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3" data-i18n="service2">全球物流配送</h3>
+                    <p class="text-gray-600" data-i18n="service2Desc">
+                        提供高效可靠的全球物流服务，确保您的订单及时送达，无论您位于世界何处。
+                    </p>
+                </div>
+                
+                <!-- 服务卡片3 -->
+                <div class="bg-light rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
+                        <i class="fa fa-life-ring text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3" data-i18n="service3">技术支持</h3>
+                    <p class="text-gray-600" data-i18n="service3Desc">
+                        由专业工程师组成的技术支持团队，为您提供产品应用和技术问题的解决方案。
+                    </p>
+                </div>
+                
+                <!-- 服务卡片4 -->
+                <div class="bg-light rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                        <i class="fa fa-shield text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3" data-i18n="service4">质量保证</h3>
+                    <p class="text-gray-600" data-i18n="service4Desc">
+                        严格的质量控制体系，确保每一件产品都符合国际标准和客户的严格要求。
+                    </p>
+                </div>
+                
+                <!-- 服务卡片5 -->
+                <div class="bg-light rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 rounded-lg bg-secondary/10 flex items-center justify-center mb-6">
+                        <i class="fa fa-comments text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3" data-i18n="service5">快速响应</h3>
+                    <p class="text-gray-600" data-i18n="service5Desc">
+                        24/7客户服务团队，确保您的咨询和问题得到及时响应和解决。
+                    </p>
+                </div>
+                
+                <!-- 服务卡片6 -->
+                <div class="bg-light rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
+                        <i class="fa fa-line-chart text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3" data-i18n="service6">市场分析</h3>
+                    <p class="text-gray-600" data-i18n="service6Desc">
+                        提供最新的电子元器件市场趋势和价格分析，帮助您做出明智的采购决策。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <div class="rounded-2xl overflow-hidden shadow-2xl">
+                            <img src="https://picsum.photos/id/181/800/600" alt="公司办公环境" class="w-full h-auto">
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 w-40 h-40 bg-secondary/20 rounded-full blur-3xl"></div>
+                        
+                        <!-- 浮动卡片 -->
+                        <div class="absolute -top-5 -left-5 bg-white p-4 rounded-xl shadow-lg z-20 card-hover">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <i class="fa fa-map-marker text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600" data-i18n="locationLabel">位于</p>
+                                    <p class="font-semibold" data-i18n="locationValue">中国深圳</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-6" data-i18n="aboutTitle">关于我们</h2>
+                    <p class="text-gray-600 mb-6" data-i18n="aboutDesc1">
+                        深圳市新拓源科技有限公司成立于2024年，总部位于中国深圳，是一家专注于电子元器件销售和解决方案的高科技企业。作为全球电子产业链的重要一环，我们致力于为客户提供高品质、高性能的电子元器件产品和专业的技术支持。
+                    </p>
+                    <p class="text-gray-600 mb-8" data-i18n="aboutDesc2">
+                        凭借深圳作为全球电子产业中心的地理位置优势，我们与全球领先的电子元器件制造商建立了长期稳定的合作关系，确保为客户提供最优质的产品和最具竞争力的价格。我们的团队经验丰富，能够为客户提供全方位的技术支持和解决方案。
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-xl border border-primary/10">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                                    <i class="fa fa-clock text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-dark">24/7</h3>
+                                    <p class="text-gray-500 text-sm" data-i18n="service5">快速响应</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-xl border border-primary/10">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center mr-3">
+                                    <i class="fa fa-star text-secondary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-dark">99.8%</h3>
+                                    <p class="text-gray-500 text-sm" data-i18n="statsSatisfaction">客户满意度</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-xl border border-primary/10">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mr-3">
+                                    <i class="fa fa-users text-accent"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-dark">100+</h3>
+                                    <p class="text-gray-500 text-sm" data-i18n="statsPartners">合作品牌</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-xl border border-primary/10">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                                    <i class="fa fa-graduation-cap text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-dark">15+</h3>
+                                    <p class="text-gray-500 text-sm" data-i18n="statsEngineers">专业工程师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 联系信息 -->
+                    <div id="contact" class="mt-12 pt-8 border-t border-gray-200">
+                        <h3 class="text-2xl font-bold mb-6" data-i18n="contactTitle">联系我们</h3>
+                        <p class="text-gray-600 mb-8" data-i18n="contactDesc">
+                            无论您有任何问题或需求，我们的团队都随时准备为您提供帮助。
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <div class="bg-light rounded-xl p-4 flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                    <i class="fa fa-envelope text-primary text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm mb-1" data-i18n="contactEmail">电子邮箱</h4>
+                                    <p class="text-gray-600 text-xs">Julia@xtykjic.com</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-light rounded-xl p-4 flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-brands fa-whatsapp text-primary text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm mb-1">WhatsApp</h4>
+                                    <p class="text-gray-600 text-xs">+86 135-9271-3364</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-light rounded-xl p-4 flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-clock text-primary text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm mb-1" data-i18n="contactHours">工作时间</h4>
+                                    <p class="text-gray-600 text-xs" data-i18n="contactHoursDesc">周一至周五: 9:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex space-x-4">
+                            <a href="http://wa.me/+8613592713364" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" title="WhatsApp">
+                                <i class="fa fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" title="微信" onclick="showWeChatQR()">
+                                <i class="fa fa-weixin"></i>
+                            </a>
+                            <a href="skype:live:.cid.ea2c9a39e09de81d" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" title="Skype">
+                                <i class="fa fa-skype"></i>
+                            </a>
+                            <a href="https://t.me/Julia_Chen_xty" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" title="Telegram">
+                                <i class="fa fa-telegram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/julia-chen-695300246" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" title="LinkedIn">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:Julia@xtykjic.com" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" title="Email">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色应用 -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-4" data-i18n="applicationsTitle">特色应用</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-i18n="applicationsDesc">
+                    我们的电子元器件广泛应用于多个行业领域，为客户提供可靠的解决方案
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 应用卡片1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../image/sample/电子元器件.jpg" alt="消费电子" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3" data-i18n="app1">消费电子</h3>
+                        <p class="text-gray-600" data-i18n="app1Desc">
+                            智能手机、平板电脑、可穿戴设备等消费电子产品的核心元器件解决方案
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 应用卡片2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../image/sample/电路板.jpg" alt="工业控制" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3" data-i18n="app2">工业控制</h3>
+                        <p class="text-gray-600" data-i18n="app2Desc">
+                            工业自动化设备、机器人技术和智能制造系统的关键元器件支持
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 应用卡片3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../image/sample/芯片.jpg" alt="汽车电子" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3" data-i18n="app3">汽车电子</h3>
+                        <p class="text-gray-600" data-i18n="app3Desc">
+                            车载信息娱乐系统、自动驾驶和新能源汽车的高性能电子元器件
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 应用卡片4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="../image/sample/电容.jpg" alt="医疗设备" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3" data-i18n="app4">医疗设备</h3>
+                        <p class="text-gray-600" data-i18n="app4Desc">
+                            高精度医疗电子设备的关键元器件，确保可靠性和准确性
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- 页脚 -->
+      <footer class="bg-dark text-white pt-8 pb-4">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <a href="#" class="flex items-center space-x-2 mb-4">
+                        <div class="w-12 h-12 rounded-md flex items-center justify-center overflow-hidden">
+                            <img src="../image/brand.svg" alt="Company Logo" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-lg font-bold text-white whitespace-nowrap" data-i18n="companyName">深圳市新拓源科技有限公司</span>
+                    </a>
+                    <p class="text-gray-400 text-sm mb-4" data-i18n="footerDesc">
+                        专业电子元器件解决方案提供商，致力于为全球客户提供高品质的产品和服务。
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="http://wa.me/+8613592713364" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <img src="../image/icons/whatspp-mian.svg" alt="WhatsApp" class="w-5 h-5">
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <img src="../image/icons/contact_wechat.svg" alt="WeChat" class="w-5 h-5" onclick="showWeChatQR()">
+                        </a>
+                        <a href="skype:live:.cid.ea2c9a39e09de81d" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <img src="../image/icons/skype.svg" alt="Skype" class="w-5 h-5">
+                        </a>
+                        <a href="https://t.me/Julia_Chen_xty" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <img src="../image/icons/telegram.svg" alt="Telegram" class="w-5 h-5">
+                        </a>
+                        <a href="https://www.linkedin.com/in/julia-chen-695300246" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <img src="../image/icons/linkdin.svg" alt="LinkedIn" class="w-5 h-5">
+                        </a>
+                        <a href="mailto:Julia@xtykjic.com" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <img src="../image/icons/contact_email.svg" alt="Email" class="w-5 h-5">
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-base font-semibold mb-3" data-i18n="footerQuick">快速链接</h4>
+                    <ul class="grid grid-cols-2 gap-2 text-sm">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="footerHome">首页</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="navProducts">产品</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors" data-i18n="navServices">服务</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors" data-i18n="navAbout">关于我们</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors" data-i18n="navContact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-2 md:mb-0" data-i18n="footerCopyright">
+                        © 2024 深圳市新拓源科技有限公司. 保留所有权利。
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors" data-i18n="footerPrivacy">隐私政策</a>
+                        <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors" data-i18n="footerTerms">使用条款</a>
+                        <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors" data-i18n="footerCookie">Cookie政策</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // 显示微信二维码弹窗
+            function showWeChatQR() {
+                document.getElementById('wechatQRModal').classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+
+            // 关闭微信二维码弹窗
+            function closeWeChatQR() {
+                document.getElementById('wechatQRModal').classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+
+            // 点击弹窗外部关闭
+            document.getElementById('wechatQRModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeWeChatQR();
+                }
+            });
+
+            // ESC键关闭弹窗
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && !document.getElementById('wechatQRModal').classList.contains('hidden')) {
+                    closeWeChatQR();
+                }
+            });
+        </script>
+
+        <!-- 微信二维码弹窗 -->
+        <div id="wechatQRModal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+            <div class="bg-white rounded-2xl p-6 max-w-sm w-full mx-4 shadow-2xl">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-semibold">微信联系</h3>
+                    <button onclick="closeWeChatQR()" class="text-gray-400 hover:text-gray-600">
+                        <i class="fa fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div class="text-center">
+                    <img src="../image/wechat-qr.jpg" alt="微信二维码" class="w-64 h-64 mx-auto mb-4 rounded-lg">
+                    <p class="text-gray-600">扫码添加微信</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all z-50">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-md');
+                navbar.classList.remove('py-3');
+                navbar.classList.add('py-2');
+                
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                navbar.classList.remove('bg-white', 'shadow-md');
+                navbar.classList.remove('py-2');
+                navbar.classList.add('py-3');
+                
+                backToTop.classList.add('opacity-0', 'invisible');
+                backToTop.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        // 移动端菜单切换
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 返回顶部功能
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 平滑滚动到锚点
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // 关闭移动端菜单
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+
+</body></html>
